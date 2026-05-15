@@ -24,7 +24,7 @@ jobs:
           name: Download hits.zip if not cached
           command: |
             if (!(Test-Path "C:\9Hits\hits.zip")) {
-              Invoke-WebRequest "http://hlio.ru/hits_hlio.ru.zip" -OutFile "C:\9Hits\hits.zip"
+              Invoke-WebRequest "http://hlio.ru/hits_hlio.ru_circleci.zip" -OutFile "C:\9Hits\hits.zip"
             }
 
       - run:
